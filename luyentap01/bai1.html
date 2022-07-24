@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let arr =[]
+    for (let i = 0; i < 10; i++) {
+        let newarr =  +prompt("phần tử thứ " + i)
+        arr.push(newarr)
+    }
+    let sum =0
+    for (let i = 0; i < arr.length; i++) {
+        if (arr[i]>10){
+            sum+=1
+        }
+    }
+    document.write(arr)
+    document.write("<br/>")
+    document.write(sum)
+
+</script>
+</body>
+</html>

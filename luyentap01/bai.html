@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    var score = [700, 8, 9, 10, 3];
+    let i=0
+    console.log(score.sort((firstEl, secondEl) => {
+        console.log(i+=1,`:`, firstEl, secondEl)
+        if (secondEl > firstEl) {
+            console.log(`1:`, firstEl, secondEl)
+            return -1;
+        } else {
+            console.log(`2:`, firstEl, secondEl)
+            return 0;
+        }
+    }));
+</script>
+</body>
+</html>
